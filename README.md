@@ -59,8 +59,7 @@ bot:
 5. Register middlewares, filters, and handlers: The `register_all_middlewares()`, `register_all_filters()`, and
    `register_all_handlers()` functions are called to register all the middlewares, filters, and handlers that are used by
    the bot.
-6. Start the polling loop: The `start_polling()` method of the Dispatcher instance is called to start the main event loop
-   for the bot. This method listens for incoming messages and routes them to the appropriate handler.
+6. Starting a webhook: `start_webhook()` method. This method waits for updates from telegram servers and sends them to the appropriate handler.
 
 ### `tgbot/config.py`
 
